@@ -43,15 +43,15 @@
 		<Size x="238" y="20"/>
 		<Layers>
 			<Layer level="ARTWORK">
-				<Texture parentKey="Background" file="Interface\PaperDollInfoFrame\UI-Character-ReputationBar">
-					<Size x="0" y="21"/>
+				<Texture parentKey="Background">
+					<Size x="0" y="63"/>
 					<Anchors>
 						<Anchor point="LEFT">
 							<Offset x="0" y="0"/>
 						</Anchor>
 					</Anchors>
 				</Texture>
-				<TexCoords left="0.0" right="0.7578125" top="0.0" bottom="0.328125"/>
+				<TexCoords left="0.0" right="0.7578125" top="0.0" bottom="0.428125"/>
 			</Layer>
 			<Layer level="OVERLAY">
 				<FontString parentKey="Name" inherits="GameFontHighlightSmall" justifyH="LEFT">
@@ -93,13 +93,13 @@
 				</Anchors>
 				<Layers>
 					<Layer level="ARTWORK">
-						<Texture parentKey="Left" file="Interface\PaperDollInfoFrame\UI-Character-ReputationBar">
-							<Size x="60" y="21"/>
+						<Texture parentKey="Left">
+							<Size x="60" y="20"/>
 							<Anchors>
 								<Anchor point="LEFT" x="0" y="0"/>
 							</Anchors>
 						</Texture>
-						<Texture parentKey="Right" file="Interface\PaperDollInfoFrame\UI-Character-ReputationBar">
+						<Texture parentKey="Right">
 							<Size x="39" y="21"/>
 							<Anchors>
 								<Anchor point="LEFT" relativeKey="$parent.Left" relativePoint="RIGHT" x="0" y="0"/>
