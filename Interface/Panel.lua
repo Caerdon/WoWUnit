@@ -125,7 +125,7 @@ function WoWUnit.Scroll:update()
 	end
 
 	HybridScrollFrame_Update(self, #entries * 23 + 3, NUM_VISIBLE_BUTTONS * 20)
-	self:SetPoint('BOTTOMRIGHT', overflow and -25 or 0, 7)
+	-- self:SetPoint('BOTTOMRIGHT', overflow and -25 or 0, 7)
 end
 
 WoWUnit:SetScript('OnEvent', WoWUnit.OnEvent)

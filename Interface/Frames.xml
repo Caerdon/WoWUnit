@@ -87,7 +87,7 @@
 				</HighlightTexture>
 			</Button>
 			<StatusBar parentKey="Bar" drawLayer="BACKGROUND" minValue="0" maxValue="1" defaultValue="1">
-				<Size x="99" y="13"/>
+				<Size x="29" y="13"/>
 				<Anchors>
 					<Anchor point="RIGHT" x="0" y="0"/>
 				</Anchors>
@@ -151,7 +151,7 @@
 	</Button>
 
 	<Frame name="WoWUnit" parent="UIParent" inherits="WoWUnitPanelTemplate" enableMouse="true" movable="true" hidden="true">
-		<Size x="266" y="400"/>
+		<Size x="266" y="600"/>
 		<Anchors>
 			<Anchor point="RIGHT" x="-20" y="0"/>
 		</Anchors>
@@ -159,7 +159,7 @@
 			<ScrollFrame parentKey='Scroll' name="$parentScroll" inherits="HybridScrollFrameTemplate">
 				<Anchors>
 					<Anchor point="TOPLEFT" x="10" y="-27"/>
-					<Anchor point="BOTTOMRIGHT" x="-25" y="7"/>
+					<Anchor point="BOTTOMRIGHT" x="-25" y="40"/>
 				</Anchors>
 				<Frames>
 					<Slider parentKey='Bar' name="$parentBar" inherits="HybridScrollBarTemplate">
@@ -170,6 +170,16 @@
 					</Slider>
 				</Frames>
 			</ScrollFrame>
+			<Button name="$parentButtonClose" inherits="OptionsButtonTemplate" text="Reload">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="-12" y="10"/>
+					</Anchor> 
+				</Anchors>
+				<Scripts>
+					<OnClick>C_UI.Reload()</OnClick>
+				</Scripts>
+			</Button>
 		</Frames>
 	</Frame>
 
