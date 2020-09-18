@@ -22,7 +22,7 @@ function WoWUnit:OnEvent(event)
 
 		local status, count = self.Group.Status(self)
 		local color = COLORS[status]
-		WoWUnitToggle:SetBackdropColor(color.r, color.g, color.b)
+		-- WoWUnitToggle:SetBackdropColor(color.r, color.g, color.b)
 		WoWUnitToggle:SetText(count)
 	end, 1)
 end
