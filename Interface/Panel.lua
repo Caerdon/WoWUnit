@@ -10,9 +10,7 @@ local COLORS = {
 --[[ Events ]]--
 
 function WoWUnit:OnEvent(event)
-	if event == "PLAYER_LOGIN" then
-		WoWUnit:Show()
-	end
+	WoWUnit:Show()
 	
 	-- TODO: Work out an async implementation
 	C_Timer.NewTicker(0.1, function()
@@ -23,7 +21,7 @@ function WoWUnit:OnEvent(event)
 
 		local status, count = self.Group.Status(self)
 		local color = COLORS[status]
-		-- WoWUnitToggle:SetBackdropColor(color.r, color.g, color.b)
+		WoWUnitToggle:SetBackdropColor(color.r, color.g, color.b)
 		WoWUnitToggle:SetText(count)
 	end, 1)
 end
