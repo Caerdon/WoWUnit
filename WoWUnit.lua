@@ -26,7 +26,7 @@ function WoWUnit:HasGroup(name)
 end
 
 function WoWUnit:AddToEvent(group, event)
-	self:RegisterEvent(event)
+	pcall(self.RegisterEvent, self, event)
 	Events[event] = Events[event] or {}
 	tinsert(Events[event], group)
 end

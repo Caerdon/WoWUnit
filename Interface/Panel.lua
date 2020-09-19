@@ -14,6 +14,7 @@ function WoWUnit:OnEvent(event)
 		WoWUnit:Show()
 	end
 	
+	-- TODO: Work out an async implementation
 	C_Timer.NewTicker(0.1, function()
 		self:RunTests(event)
 		if self:IsShown() then
