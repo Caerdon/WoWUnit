@@ -153,7 +153,7 @@
 	<Frame name="WoWUnit" parent="UIParent" inherits="WoWUnitPanelTemplate" enableMouse="true" movable="true" hidden="true">
 		<Size x="266" y="600"/>
 		<Anchors>
-			<Anchor point="RIGHT" x="-20" y="0"/>
+			<Anchor point="LEFT" x="-20" y="0"/>
 		</Anchors>
 		<Frames>
 			<ScrollFrame parentKey='Scroll' name="$parentScroll" inherits="HybridScrollFrameTemplate">
@@ -183,10 +183,10 @@
 		</Frames>
 	</Frame>
 
-	<Button name="WoWUnitToggle" parent="UIParent" hidden="false" clampedToScreen="false">
-		<Size x="30" y="80"/>
+	<Button name="WoWUnitToggle" parent="QuickJoinToastButton" hidden="false" clampedToScreen="false">
+		<Size x="28" y="50"/>
 		<Anchors>
-			<Anchor point="BOTTOMLEFT" x="2" y="2"/>
+			<Anchor point="BOTTOMLEFT" x="2" y="2" relativePoint="TOPLEFT" />
 		</Anchors>
 
 		<Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
@@ -221,6 +221,6 @@
 			</OnClick>
 		</Scripts>
 
-		<NormalFont style="GameFontHighlightHuge"/>
+		<NormalFont style="GameFontHighlight"/>
 	</Button>
 </Ui>
